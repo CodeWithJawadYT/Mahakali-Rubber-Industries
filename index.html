@@ -1005,6 +1005,251 @@
           margin: 30px 0;
         }
       }
+      .product-hero {
+        padding: 8vw 6vw;
+      }
+      .product-hero h1 {
+        font: 800 clamp(3.5rem, 8vw, 8rem)/0.86 Syne;
+        letter-spacing: -0.08em;
+        margin: 1.5rem 0 2rem;
+      }
+      .product-hero h1 em,
+      .product-cta h2 em {
+        color: var(--red);
+        font-style: normal;
+      }
+      .product-hero-grid {
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr;
+        gap: 3rem;
+        align-items: end;
+      }
+      .product-hero-image {
+        position: relative;
+        min-height: 310px;
+        border: 1px solid var(--line);
+        overflow: hidden;
+      }
+      .product-hero-image img {
+        width: 100%;
+        height: 100%;
+        min-height: 310px;
+        object-fit: cover;
+      }
+      .product-hero-image span {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: var(--red);
+        color: #fff;
+        padding: 0.8rem;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+      .product-spec {
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.5;
+      }
+      .product-cta {
+        background: var(--ink);
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 3rem;
+        padding: 7vw 6vw;
+      }
+      .product-cta h2 {
+        font: 800 clamp(2.5rem, 5vw, 5rem)/0.9 Syne;
+        letter-spacing: -0.07em;
+      }
+      .product-cta p {
+        color: #b9b9b2;
+        max-width: 520px;
+        line-height: 1.8;
+      }
+      @media (max-width: 760px) {
+        .product-hero-grid {
+          grid-template-columns: 1fr;
+        }
+        .product-hero-image,
+        .product-hero-image img {
+          min-height: 230px;
+        }
+        .product-cta {
+          display: block;
+        }
+        .product-cta .button {
+          display: inline-flex;
+          margin-top: 2rem;
+        }
+      }
+      .technical {
+        background: var(--ink);
+        color: #fff;
+      }
+      .technical .section-rail {
+        border-color: #ffffff36;
+      }
+      .technical .section-rail p {
+        color: #afb1aa;
+      }
+      .technical h2 {
+        font-size: clamp(48px, 6vw, 86px);
+      }
+      .technical .body-large {
+        color: #bfc0bb;
+      }
+      .spec-table {
+        margin-top: 45px;
+        border-top: 1px solid #ffffff38;
+      }
+      .spec-row {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 28px;
+        padding: 20px 0;
+        border-bottom: 1px solid #ffffff38;
+      }
+      .spec-row strong {
+        color: #efaa99;
+        font: 700 17px Syne;
+      }
+      .spec-row span {
+        color: #e4e2da;
+        font-size: 13px;
+        line-height: 1.7;
+      }
+      .why {
+        background: #efeae1;
+      }
+      .why h2,
+      .industries h2 {
+        font-size: clamp(48px, 6vw, 86px);
+      }
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: var(--line);
+        margin-top: 50px;
+        border: 1px solid var(--line);
+      }
+      .why-card {
+        background: #efeae1;
+        padding: 25px;
+        min-height: 185px;
+      }
+      .why-card span,
+      .industry-card span {
+        color: var(--red);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+      }
+      .why-card h3 {
+        font: 700 20px/1.05 Syne;
+        letter-spacing: -0.04em;
+        margin: 25px 0 12px;
+      }
+      .why-card p {
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.65;
+        margin: 0;
+      }
+      .industries {
+        background: #e9e3d8;
+      }
+      .industry-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 50px;
+      }
+      .industry-card {
+        background: var(--paper);
+        min-height: 160px;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid var(--line);
+        transition:
+          transform 0.2s var(--ease),
+          background 0.2s var(--ease);
+      }
+      .industry-card:hover {
+        transform: translateY(-5px);
+        background: #fff;
+      }
+      .industry-card h3 {
+        font: 700 25px Syne;
+        letter-spacing: -0.05em;
+        margin: 0;
+        max-width: 190px;
+      }
+      .industry-card svg {
+        align-self: flex-end;
+        color: var(--red);
+      }
+      .contact-address {
+        max-width: 550px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.8;
+        margin: 24px 0;
+      }
+      .map-wrap {
+        height: 360px;
+        margin-top: 55px;
+        border: 1px solid var(--line);
+        background: var(--paper2);
+        overflow: hidden;
+      }
+      .map-wrap iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        filter: grayscale(0.2) contrast(1.05);
+      }
+      @media (max-width: 980px) {
+        .why-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .industry-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 700px) {
+        .spec-row {
+          grid-template-columns: 1fr;
+          gap: 8px;
+          padding: 16px 0;
+        }
+        .spec-row strong {
+          font-size: 15px;
+        }
+        .why-grid,
+        .industry-grid {
+          grid-template-columns: 1fr;
+        }
+        .why-card {
+          min-height: 0;
+        }
+        .industry-card {
+          min-height: 130px;
+        }
+        .map-wrap {
+          height: 300px;
+          margin-top: 40px;
+        }
+        .contact-address {
+          font-size: 13px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1019,7 +1264,7 @@
         ><span>Mahakali<small>Rubber Industries</small></span></a
       >
       <nav class="desktop-nav">
-        <a href="#diaphragms">Diaphragms</a><a href="#products">Products</a
+        <a href="#diaphragms">Diaphragms</a><a href="/products">Products</a
         ><a href="#process">Process</a><a href="#materials">Materials</a
         ><a href="#contact">Contact</a>
       </nav>
@@ -1044,7 +1289,7 @@
         </div>
         <a href="#home">Home <span>01</span></a
         ><a href="#diaphragms">Diaphragms <span>02</span></a
-        ><a href="#products">Product catalog <span>03</span></a
+        ><a href="/products">Product catalog <span>03</span></a
         ><a href="#process">Our process <span>04</span></a
         ><a href="#contact">Contact <span>05</span></a>
         <div class="drawer-contact">
@@ -1070,7 +1315,7 @@
           </p>
           <div class="hero-actions">
             <a class="button button-red" href="#quote">Request a quote →</a
-            ><a class="text-link" href="#products">Explore products ↗</a>
+            ><a class="text-link" href="/products">Explore products ↗</a>
           </div>
           <div class="hero-stats">
             <span><b>25+</b><small>years making rubber</small></span
@@ -1277,6 +1522,172 @@
           </div>
         </div>
       </section>
+      <section class="technical section" id="technical">
+        <div class="section-rail">
+          <span>05</span>
+          <p>Technical<br />data</p>
+        </div>
+        <div>
+          <div class="section-label">Rubber diaphragm specification</div>
+          <h2>Built around<br /><em>your operating window.</em></h2>
+          <p class="body-large">
+            Our rubber diaphragms are engineered for repeatable movement,
+            pressure control and long service life across demanding industrial
+            systems.
+          </p>
+          <div class="spec-table">
+            <div class="spec-row">
+              <strong>Applications</strong
+              ><span
+                >Heavy fluid control; pneumatic valves; metering pumps;
+                hydraulic actuators; pressure regulators</span
+              >
+            </div>
+            <div class="spec-row">
+              <strong>Dimensions</strong
+              ><span
+                >Thickness 0.5 mm to 20 mm; outer diameters up to 600 mm</span
+              >
+            </div>
+            <div class="spec-row">
+              <strong>Fabric reinforcement</strong
+              ><span>Nylon; Polyester; Kevlar</span>
+            </div>
+            <div class="spec-row">
+              <strong>Materials</strong
+              ><span>NBR; EPDM; Silicone; Viton; Neoprene; Natural Rubber</span>
+            </div>
+            <div class="spec-row">
+              <strong>Performance</strong
+              ><span
+                >Shore Hardness 40–80 Shore A; pressure up to 150+ PSI;
+                temperature range −40°C to +250°C</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why section" id="why">
+        <div class="section-rail">
+          <span>06</span>
+          <p>Why<br />Mahakali</p>
+        </div>
+        <div>
+          <div class="section-label">Built for dependable supply</div>
+          <h2>More than a<br /><em>rubber vendor.</em></h2>
+          <div class="why-grid">
+            <article class="why-card">
+              <span>01</span>
+              <h3>25+ Years Experience</h3>
+              <p>
+                Practical manufacturing knowledge shaped by decades of rubber
+                production.
+              </p>
+            </article>
+            <article class="why-card">
+              <span>02</span>
+              <h3>Direct Manufacturer Pricing</h3>
+              <p>
+                Clear commercial pricing direct from the manufacturing unit.
+              </p>
+            </article>
+            <article class="why-card">
+              <span>03</span>
+              <h3>Custom Compound Formulation</h3>
+              <p>
+                Compound guidance matched to your media, hardness and
+                temperature.
+              </p>
+            </article>
+            <article class="why-card">
+              <span>04</span>
+              <h3>Low MOQ</h3>
+              <p>
+                Flexible order quantities for prototypes and production
+                programs.
+              </p>
+            </article>
+            <article class="why-card">
+              <span>05</span>
+              <h3>Supplying Globally</h3>
+              <p>
+                Export-ready support for customers across India and North
+                America.
+              </p>
+            </article>
+            <article class="why-card">
+              <span>06</span>
+              <h3>Custom OEM Manufacturing</h3>
+              <p>
+                Parts produced to drawings, samples and technical
+                specifications.
+              </p>
+            </article>
+            <article class="why-card">
+              <span>07</span>
+              <h3>Traceable Batches</h3>
+              <p>
+                Consistent documentation and batch-level manufacturing
+                visibility.
+              </p>
+            </article>
+            <article class="why-card">
+              <span>08</span>
+              <h3>Engineering Support</h3>
+              <p>
+                DFM review and material recommendations before tooling begins.
+              </p>
+            </article>
+            <article class="why-card">
+              <span>09</span>
+              <h3>Quality Controlled</h3>
+              <p>Dimensional, visual and material checks before dispatch.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="industries section" id="industries">
+        <div class="section-rail">
+          <span>07</span>
+          <p>Industries<br />we serve</p>
+        </div>
+        <div>
+          <div class="section-label">Where our parts work</div>
+          <h2>Rubber that keeps<br /><em>industry moving.</em></h2>
+          <div class="industry-grid">
+            <article class="industry-card">
+              <span>01</span>
+              <h3>Food & Meat</h3>
+              <b>Hygienic, abrasion-resistant components</b>
+            </article>
+            <article class="industry-card">
+              <span>02</span>
+              <h3>Fluid Handling</h3>
+              <b>Sealing and pressure-control parts</b>
+            </article>
+            <article class="industry-card">
+              <span>03</span>
+              <h3>Industrial Automation</h3>
+              <b>Repeatable motion and isolation</b>
+            </article>
+            <article class="industry-card">
+              <span>04</span>
+              <h3>Pneumatics & Hydraulics</h3>
+              <b>Diaphragms, seals and actuators</b>
+            </article>
+            <article class="industry-card">
+              <span>05</span>
+              <h3>Automotive</h3>
+              <b>Mounts, boots and custom profiles</b>
+            </article>
+            <article class="industry-card">
+              <span>06</span>
+              <h3>Chemical</h3>
+              <b>Media-resistant compound options</b>
+            </article>
+          </div>
+        </div>
+      </section>
       <section class="quote section" id="quote">
         <div class="quote-art">
           <span>RUBBER<br />WITHOUT<br /><em>COMPROMISE.</em></span>
@@ -1349,21 +1760,37 @@
       </section>
       <section class="contact section" id="contact">
         <div class="section-rail">
-          <span>05</span>
+          <span>08</span>
           <p>Come by<br />the factory</p>
         </div>
         <div>
           <div class="section-label">Visit us</div>
           <h2>Let’s make<br /><em>something solid.</em></h2>
+          <p class="contact-address">
+            Shed No. 54, Narnarayan Industrial Estate, Near Lubi Electricals /
+            Rehmat Nagar, Bapunagar / Gheekanta, Ahmedabad, Gujarat 380023,
+            India.
+          </p>
+          <a
+            class="button button-red"
+            href="https://maps.app.goo.gl/QgmCuRCF6VM2Cip88?g_st=ic"
+            target="_blank"
+            rel="noreferrer"
+            >Get directions ↗</a
+          >
+          <div class="map-wrap">
+            <iframe
+              title="Mahakali Rubber Industries India location"
+              src="https://www.google.com/maps?q=Shed+No.+54,+Narnarayan+Industrial+Estate,+Rehmat+Nagar,+Bapunagar,+Ahmedabad,+Gujarat+380023,+India&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
           <div class="contact-grid">
             <div class="contact-card">
-              <small>India / Manufacturing unit</small>
-              <p>
-                Mahakali Rubber Industries<br />Shed.No.54, Narnarayan Ind.
-                Estate<br />Rehmat Nagar, Bapunagar<br />Ahmedabad, Gujarat
-                380023, India
-              </p>
-              <a href="tel:+919924454453">+91 99244 54453</a>
+              <small>India / Manufacturing unit</small
+              ><a href="tel:+919924454453">+91 99244 54453</a>
             </div>
             <div class="contact-card">
               <small>Canada / North America</small>
@@ -1391,7 +1818,7 @@
         machines.
       </p>
       <div class="footer-links">
-        <a href="#products">Catalog</a><a href="#process">Process</a
+        <a href="/products">Catalog</a><a href="#process">Process</a
         ><a href="#quote">Request a quote</a>
       </div>
       <small>© 2026 Mahakali Rubber Industries</small>
@@ -1468,6 +1895,50 @@
             render(b.dataset.filter);
           }),
       );
+
+      if (
+        location.pathname.replace(/\/+$/, "") === "/products" ||
+        location.pathname.endsWith("/products.html")
+      ) {
+        document.title = "Products | Mahakali Rubber Industries";
+        document.querySelector("main").innerHTML =
+          `<section class="product-hero section"><div class="section-rail"><span>02</span><p>Product<br>catalog</p></div><div><div class="section-label">The complete range</div><h1>Rubber parts<br><em>for working machines.</em></h1><p class="body-large">From natural rubber diaphragms to custom molded parts, every component is developed to your drawing, compound and performance target.</p><div class="product-hero-grid"><div><p class="hero-note">Wholesale supplier direct from manufacturing.<br>We are manufacturer and supplier both.</p><a class="button button-red" href="mailto:mahakalirubber@gmail.com?subject=Product%20inquiry%20-%20Mahakali%20Rubber%20Industries">Send your requirement →</a></div><div class="product-hero-image"><img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663790888706/TeuMYJUgLTbEYeDP.jpg" alt="Rubber components and rolls in an industrial manufacturing facility"><span>Direct from plant</span></div></div></div></section><section class="catalog section product-catalog-section"><div><div class="section-heading"><div><div class="section-label">Specification-led catalog</div><h2>Choose the part.<br><em>We’ll engineer the fit.</em></h2></div><p>Send a drawing, sample or operating requirement. Our team can advise on elastomer, hardness, tooling and inspection requirements.</p></div><div class="filters">${["All", "Diaphragms", "Seals", "Bonded", "Bellows", "Extruded", "Poultry", "Molded Parts"].map((f) => '<button data-filter="' + f + '" class="' + (f === "All" ? "active" : "") + '">' + f + "</button>").join("")}</div><div class="product-grid" id="productGridProducts"></div></div></section><section class="product-cta section"><div><div class="section-label">Need a custom component?</div><h2>Send the drawing.<br><em>We’ll make it workable.</em></h2><p>Share your dimensions, material preference, application and annual quantity. We’ll reply with a practical manufacturing route.</p></div><a class="button button-red" href="mailto:mahakalirubber@gmail.com?subject=Product%20inquiry%20-%20Mahakali%20Rubber%20Industries">Start an inquiry →</a></section>`;
+        const productGridPage = document.getElementById("productGridProducts");
+        function renderProducts(filter = "All") {
+          productGridPage.innerHTML = products
+            .filter((p) => filter === "All" || p[0] === filter)
+            .map(
+              (p) =>
+                '<article class="product-card"><div class="product-img"><img src="' +
+                p[5] +
+                '" alt="' +
+                p[2] +
+                '"><span>' +
+                p[1] +
+                '</span></div><div class="product-meta"><div><small>' +
+                p[0] +
+                "</small><h3>" +
+                p[2] +
+                "</h3></div><span>↗</span></div><p>" +
+                p[3] +
+                '</p><div class="tag-row">' +
+                p[4].map((t) => "<span>" + t + "</span>").join("") +
+                "</div></article>",
+            )
+            .join("");
+        }
+        renderProducts();
+        document.querySelectorAll("[data-filter]").forEach(
+          (b) =>
+            (b.onclick = () => {
+              document
+                .querySelectorAll("[data-filter]")
+                .forEach((x) => x.classList.remove("active"));
+              b.classList.add("active");
+              renderProducts(b.dataset.filter);
+            }),
+        );
+      }
     </script>
   </body>
 </html>

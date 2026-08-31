@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315191c'/%3E%3Ccircle cx='32' cy='32' r='19' fill='none' stroke='%23d93532' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23d93532'/%3E%3Cpath d='M32 5v12M32 47v12M5 32h12M47 32h12' stroke='%23d93532' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"
@@ -10,8 +9,10 @@
     <meta name="theme-color" content="#15191c" />
     <meta
       name="description"
-      content="Mahakali Rubber Industries — wholesale supplier direct from manufacturing."
-    />
+    <meta charset="utf-8"/>
+      
+    
+    <meta charset="utf-8"/>
     <title>
       Mahakali Rubber Industries | Direct-from-manufacturing rubber components
     </title>
@@ -761,6 +762,42 @@
         color: var(--muted);
         margin: 16px 0 0;
       }
+      .upload-drawing-block {
+        margin: 26px 0 32px;
+        padding: 20px;
+        border: 1px dashed var(--line);
+        background: rgba(255, 255, 255, 0.4);
+      }
+      .upload-drawing-block p {
+        margin: 0 0 14px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.6;
+      }
+      .upload-drawing-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--ink);
+        color: #fff;
+        border: 0;
+        padding: 14px 18px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        transition: transform 0.2s var(--ease);
+      }
+      .upload-drawing-btn:hover {
+        transform: translateY(-3px);
+      }
+      .upload-drawing-formats {
+        margin: 12px 0 0;
+        font-size: 9px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
       .contact-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1122,6 +1159,12 @@
         font-size: 13px;
         line-height: 1.7;
       }
+      .spec-disclaimer {
+        margin: 22px 0 0;
+        font-size: 11px;
+        line-height: 1.7;
+        color: #9a9c95;
+      }
       .why {
         background: #efeae1;
       }
@@ -1334,7 +1377,7 @@
       <section class="hero" id="home">
         <div>
           <div class="eyebrow">
-            <i></i> ISO 9001:2015 · Global OEM manufacturer
+            <i></i> Quality-Focused Manufacturing · Custom Rubber Parts Manufacturer & Supplier
           </div>
           <h1>Rubber parts<br /><em>built to flex.</em><br />Made to last.</h1>
           <p class="hero-lede">
@@ -1347,9 +1390,9 @@
             ><a class="text-link" href="#products">Explore products ↗</a>
           </div>
           <div class="hero-stats">
-            <span><b>25+</b><small>years making rubber</small></span
-            ><span><b>10⁶</b><small>flex cycles tested</small></span
-            ><span><b>24h</b><small>quote response</small></span>
+            <span><b>25+</b><small>years of rubber manufacturing experience</small></span
+            ><span><b>Built for</b><small>demanding cyclic applications</small></span
+            ><span><b>Fast</b><small>quotation &amp; engineering response</small></span>
           </div>
         </div>
         <div class="hero-visual">
@@ -1367,7 +1410,7 @@
       <div class="ticker">
         <div>Custom molded</div>
         <div>CAD drawing review</div>
-        <div>Global OEM supply</div>
+        <div>Custom rubber parts manufacturer &amp; supplier</div>
         <div>Traceable batches</div>
       </div>
       <section class="about section" id="about">
@@ -1401,7 +1444,7 @@
         </div>
         <div>
           <div class="section-label">Diaphragms spotlight</div>
-          <h2>Made to flex<br /><em>a million cycles.</em></h2>
+          <h2>Engineered for<br /><em>demanding applications.</em></h2>
           <p class="body-large">
             Fabric-reinforced, PTFE-bonded, rolling and homogeneous diaphragms
             for pumps, actuators, regulators and control valves — engineered to
@@ -1472,10 +1515,11 @@
             <div class="process-item">
               <span>01</span>
               <div>
-                <h3>Drawing review & DFM</h3>
+                <h3>In-House Rubber Mixing & Formulation</h3>
                 <p>
-                  We review your PDF, STEP or drawing, flag moldability risks
-                  and recommend the elastomer grade.
+                  Compounding and formulation carried out in-house to reach
+                  the target hardness, chemical resistance and temperature
+                  range for your application.
                 </p>
               </div>
               <span>✓</span>
@@ -1483,10 +1527,10 @@
             <div class="process-item">
               <span>02</span>
               <div>
-                <h3>Compounding</h3>
+                <h3>Hydraulic Press Rubber Moulding</h3>
                 <p>
-                  In-house mixing to target hardness, chemical resistance and
-                  temperature range.
+                  Parts are moulded on hydraulic presses for consistent
+                  density, cure and dimensional control.
                 </p>
               </div>
               <span>✓</span>
@@ -1494,10 +1538,10 @@
             <div class="process-item">
               <span>03</span>
               <div>
-                <h3>Tooling</h3>
+                <h3>Custom Rubber Moulding & Component Manufacturing</h3>
                 <p>
-                  CNC-machined compression, transfer or injection molds — 10–15
-                  days typical.
+                  Components produced to your drawing, sample or technical
+                  specification, from prototype through production runs.
                 </p>
               </div>
               <span>✓</span>
@@ -1505,10 +1549,10 @@
             <div class="process-item">
               <span>04</span>
               <div>
-                <h3>Molding & finishing</h3>
+                <h3>Batch Traceability</h3>
                 <p>
-                  Vulcanizing, deflashing, cryogenic trimming and bonded inserts
-                  as required.
+                  Production is tracked batch by batch, giving clear
+                  visibility across every manufacturing run.
                 </p>
               </div>
               <span>✓</span>
@@ -1516,10 +1560,10 @@
             <div class="process-item">
               <span>05</span>
               <div>
-                <h3>QC & dispatch</h3>
+                <h3>Quality Inspection & Dimensional Checks</h3>
                 <p>
-                  Dimensional inspection, material certificates and
-                  door-delivery logistics.
+                  Dimensional and visual inspection before dispatch, checked
+                  against your drawing and specification.
                 </p>
               </div>
               <span>✓</span>
@@ -1557,7 +1601,7 @@
             <div class="material">
               <span>04</span>
               <h3>Silicone / VMQ</h3>
-              <p>Flexible, clean and FDA-ready.</p>
+              <p>Flexible, clean and food-contact grades available.</p>
               <b>−60°C → +200°C</b>
             </div>
             <div class="material">
@@ -1618,6 +1662,10 @@
               >
             </div>
           </div>
+          <p class="spec-disclaimer">
+            Performance varies by material, construction and application.
+            Contact us for application-specific specifications.
+          </p>
         </div>
       </section>
       <section class="why section" id="why">
@@ -1631,7 +1679,7 @@
           <div class="why-grid">
             <article class="why-card">
               <span>01</span>
-              <h3>25+ Years Experience</h3>
+              <h3>25+ Years of Rubber Manufacturing Experience</h3>
               <p>
                 Practical manufacturing knowledge shaped by decades of rubber
                 production.
@@ -1760,12 +1808,21 @@
         </div>
         <div class="quote-main">
           <div class="section-label">Instant inquiry</div>
-          <h2>Send the drawing.<br /><em>Get a quote in 24 hours.</em></h2>
+          <h2>Send the drawing.<br /><em>Fast quotation & engineering response.</em></h2>
           <p>
             Describe your part or upload a drawing. Our engineering team
             responds with material recommendations, tooling estimate and unit
             price.
           </p>
+          <div class="upload-drawing-block">
+            <p>Have a drawing or sample? Send it to us for review and quotation.</p>
+            <a
+              class="upload-drawing-btn"
+              href="mailto:mahakalirubber@gmail.com?subject=Drawing%20submission%20-%20Mahakali%20Rubber%20Industries&body=Please%20attach%20your%20drawing%20or%20sample%20file%20(PDF%2C%20STEP%2C%20DWG%2C%20DXF%20or%20JPG)%20to%20this%20email%20before%20sending.%0D%0A%0D%0AProduct%2Fpart%20details%3A%0D%0A"
+              >Upload Your Drawing</a
+            >
+            <p class="upload-drawing-formats">PDF · STEP · DWG · DXF · JPG</p>
+          </div>
           <form
             onsubmit="
               event.preventDefault();
@@ -1910,7 +1967,7 @@
           "01 / FLEX",
           "Custom Rubber Diaphragms",
           "Fabric-reinforced, PTFE-bonded, rolling and homogeneous diaphragms for pumps, regulators and control valves.",
-          ["NBR / EPDM", "10⁶+ cycles"],
+          ["NBR / EPDM", "Demanding cyclic applications"],
           "https://files.manuscdn.com/user_upload_by_module/session_file/310519663790888706/fKqeNkcQNnXYtMcK.jpg",
         ],
         [
@@ -1918,7 +1975,7 @@
           "02 / SEAL",
           "Molded Seals & Gaskets",
           "Flange gaskets, cover seals and custom-profile molded gaskets produced to your drawing.",
-          ["FDA option", "Per drawing"],
+          ["Food-contact grades available", "Per drawing"],
           "https://files.manuscdn.com/user_upload_by_module/session_file/310519663790888706/TjOdfvynMSHsPuWS.jpg",
         ],
         [
